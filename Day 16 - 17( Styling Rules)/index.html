@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Rules</title>
+    <style>
+        /* Element Selector */
+        div{
+            /* background-color: red; */
+        }
+        /* Class Seletor */
+        .aqua{
+            background-color: aqua;
+        }
+
+        /* ID Selector */
+        #orange{
+            background-color:red;   
+            color: red;
+        }
+        /* Child selector */
+        div > p{
+            color: blue;
+            font-style: italic;
+        }
+        /* desendent selector */
+        div p {
+            color: orange;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(14, 247, 49);
+        }
+
+        a:link{
+            color: rgb(182, 15, 211);
+        }
+
+        a:active{
+            color: green;
+        }
+        a:hover{
+            background-color: rgb(60, 98, 222);
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Using Internal CSS</h1>
+    <div> 
+        <h2>This line for Element Selector </h2>
+        <p> I am a para in div</p>
+    </div>
+    
+    <div class="aqua"> 
+        <h2>This line for the class Selector</h2>
+        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In totam quos minima eligendi eaque sed adipisci illum officia deleniti molestiae quibusdam tempora ex magnam voluptatibus ducimus quod, dolores distinctio ratione a, blanditiis officiis illo neque. Id, recusandae rem ipsam ad sequi quaerat eaque possimus iste?</p>
+        </article>
+        
+    </div>
+
+    <div id="orange">
+        <p>This is for the id Selector</p>
+    </div>  
+
+    <a href="https://google.com">Google.com</a>
+    <a href="https://flipkart.com">Flipkart</a>
+</body>
+</html>
